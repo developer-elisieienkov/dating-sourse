@@ -1,0 +1,122 @@
+@media all and (max-width: 400px) {
+  header {
+    .header-nav {
+      max-height: 80px;
+      &__list {
+        margin-top: 20px;
+      }
+    }
+  }
+  main {
+    margin-top: 80px !important;
+  }
+  .logo {
+    justify-content: center;
+    &__image {
+      margin-right: 0px !important;
+      height: 50px !important;
+      width: auto !important;
+    }
+    &__brand,
+    &__description {
+      display: none;
+    }
+  }
+  body {
+    .card {
+      &__image {
+        height: 200px !important;
+      }
+      width: 100% !important;
+    }
+  }
+}
+@media all and (max-width: 650px) {
+  .title {
+    p {
+      width: 90%;
+    }
+  }
+  .card__image {
+    height: 150px !important;
+  }
+}
+@media all and (max-width: 760px) {
+  .article {
+    &__image {
+      img {
+        width: 70vw !important;
+        height: auto !important;
+      }
+    }
+  }
+  .profile-article {
+    .article__image {
+      margin-right: 0 !important;
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media all and (max-width: 960px) {
+  .article {
+    .container {
+      flex-wrap: wrap !important;
+    }
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 48% !important;
+    &__image {
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .header-nav {
+    max-height: 125px;
+    .container {
+      display: flex;
+      flex-direction: column !important;
+      flex-wrap: nowrap;
+    }
+    &__list {
+      max-height: 0;
+      flex-direction: column !important;
+      overflow: hidden;
+      transform: translateY(-50%);
+      opacity: 0;
+      &__item {
+        margin-bottom: 10px !important;
+      }
+    }
+    &__toggler {
+      display: block !important;
+    }
+  }
+  main {
+    margin-top: 125px;
+  }
+  .home-heading {
+    justify-content: flex-end !important;
+    .title {
+      margin: 100px 0 0 0 !important;
+    }
+  }
+
+  .title__heading {
+    width: 90% !important;
+  }
+  .title__description {
+    width: 90% !important;
+  }
+  .footer {
+    .column {
+      padding-right: 0 !important;
+    }
+  }
+}
